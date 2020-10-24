@@ -1,6 +1,7 @@
 function validation(){
     var fname = document.getElementById("fname").value;
     var lname = document.getElementById("lname").value;
+    var phone = document.getElementById("phone").value;
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
     var error = document.getElementById("error");
@@ -9,13 +10,13 @@ function validation(){
     error.style.padding = "10px";
 
     if(fname.length <2){
-        text = "Please Enter Valid Name";
+        text = "Please Enter Valid First Name";
         error.innerHTML = text;
         return false;
     }
 
     if(lname.length <2){
-        text = "Please Enter Valid Name";
+        text = "Please Enter Valid Last Name";
         error.innerHTML = text;
         return false;
     }
@@ -37,7 +38,6 @@ function validation(){
         error.innerHTML = text;
         return false;
     }
-    alert("Form Submitted Successfully")
+    alert("Form Submitted Successfully. Thank you.")
     return true;
-
 }

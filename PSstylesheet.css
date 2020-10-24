@@ -38,12 +38,24 @@ li {
 }
 
 label {
-    color: #f4f4f4;
+    color: #1a1c20;
 }
 
 img {
     height: 200px; 
     width: 300px; 
+    transition: transform .2s;
+    margin: 0 auto;
+}  
+ img :hover {
+        transform: scale(1.5);
+    }
+
+.contact-form {
+    background-color: #f4f4f4;
+    position: relative;
+    width: 20%;
+    display: inline-block;
 }
 
 .top-container {
@@ -84,12 +96,12 @@ img {
 
 .footerNav {
     position: fixed;
+    bottom: 40px;
     text-align: center;
     margin: auto;
     left: 0;
     right: 0;
 }
-
 
 .footerNav ul {
     list-style-type: none;
