@@ -5,23 +5,23 @@ body {
 }
 
 h1 {
-    color: #f4f4f4;
+    color: #e0ffff;
 }
 
 h2 {
-    color: #f4f4f4;
+    color: #e0ffff;
 }
 
 h3 {
-    color: #f4f4f4;
+    color: #e0ffff;
 }
 
 h4 {
-    color: #f4f4f4;
+    color: #e0ffff;
 }
 
 p {
-    color: #f4f4f4;
+    color: #e0ffff;
 }
 
 hr {
@@ -65,11 +65,18 @@ img {
 }
 
 .homeHeading {
-    color: #f4f4f4;
+    color: #e0ffff;
     text-align: center;
-    font-size: 500%;
+    font-size: 1000%;
     line-height: 200px;
     height: 200px;
+    animation: bounceIn 2s;
+}
+
+#homeSubHeading {
+    color: #e0ffff;
+    font-size: 200%;
+    animation: bounceIn 2s;
 }
 
 .headerNav {
@@ -118,15 +125,54 @@ img {
 }
 
 a:link {
-    color:#318fb5;
+    color:#feffff;
   }
 
 a:visited {
-    color:#318fb5;
+    color:#feffff;
 }
   
   a:hover {
-    color: #ffc1f3;
+    color: #dda0dd;
+  }
+
+  a.homeButton {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+    }
+    a.homeButton:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+    }
+    @media all and (max-width:30em) {
+     a.homeButton {
+        display:block;
+        margin:0.4em auto;
+        }
+    }
+
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.1);
+      opacity: 0;
+    }
+    60% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 
   
